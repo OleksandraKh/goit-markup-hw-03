@@ -1,0 +1,243 @@
+:root {
+  --primary-text-color: #757575; /* Вторичный цвет текста */
+  --title-text-color: #212121; /*Цвет основного текста */
+  --accent-color: #2196f3; /*Акцент */
+  --primary-white-color: #ffffff; /* Белый цвет */
+  /* опциональный цвет текста rgba(255, 255, 255, 0.6) 
+  rgba(255, 255, 255, 0.4); */
+  /* Вторичный цвет фона #F5F4FA */
+}
+body {
+  background-color: #ffffff;
+  color: #212121;
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+h2 {
+  color: var(--title-text-color);
+
+  font-style: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+h3 {
+  color: var(--title-text-color);
+
+  font-style: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+button {
+  background-color: #f5f4fa;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  font-family: inherit;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+/* Logo  */
+.logo {
+  color: var(--accent-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.accent {
+  color: var(--title-text-color);
+}
+
+/* Site nav */
+.site-nav,
+.contacts-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.contacts-nav {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.contacts-nav .link:hover,
+.site-nav .link:focus,
+.contacts-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--primary-text-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.btn-hero {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+  background-color: var(--primary-white-color);
+  color: var(--accent-color);
+}
+
+/* Features */
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: var(--primary-text-color);
+}
+
+/* Чем мы занимаемся */
+
+.section-subtitle {
+  background-color: var(--primary-text-color);
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/* Наша команда */
+
+.section-team {
+  background-color: #f5f4fa;
+}
+
+.team-subtitle {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19px;
+}
+
+.team-text {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.19px;
+}
+
+.img:focus,
+.img:hover {
+  background-color: var(--accent-color);
+}
+
+/* Постоянные клиенты */
+
+/* Подвал */
+footer {
+  background-color: #2f303a;
+}
+.footer-text {
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.logo-accent {
+  color: var(--primary-white-color);
+}
+
+.btn-footer {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.btn-footer:hover,
+.btn-footer:focus {
+  background-color: var(--primary-white-color);
+  color: var(--accent-color);
+}
+
+.autor {
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+address {
+  color: #ffffff;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.add-title {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+}
+
+/* Портфолио */
+
+.card-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.card-text {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+
+  font-size: 18px;
+  line-height: 1.56;
+}
+.card-subtitle {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
