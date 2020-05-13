@@ -7,6 +7,19 @@
   rgba(255, 255, 255, 0.4); */
   /* Вторичный цвет фона #F5F4FA */
 }
+
+/* Для того чтобы не задавать box-sizing каждому элементу отдельно */
+html {
+  box-sizing: border-box;
+}
+
+/*всем элементам и псевдоэлементам, при помощи универсального селектора *, задаётся наследование box-sizing от предка*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /*наследует значение блочной модели родителя. */
+}
+
 body {
   background-color: #ffffff;
   color: #212121;
@@ -16,6 +29,8 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -28,7 +43,6 @@ h2 {
   line-height: 1.17;
   text-align: center;
 }
-
 h3 {
   color: var(--title-text-color);
 
@@ -43,6 +57,12 @@ button {
   font-size: 16px;
   line-height: 1.62;
   font-family: inherit;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px; /*минимальная длинна кнопки */
+  border: 1px solid transparent; /*transparent - прозрачная рамка */
+
+  text-align: center;
 }
 
 button:hover,
@@ -51,7 +71,22 @@ button:focus {
   color: var(--primary-white-color);
 }
 
+/* Heder */
+.page-header {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
+.header-container {
+  /* height: 80px; */
+  outline: 2px solid tomato;
+}
 /* Logo  */
+
 .logo {
   color: var(--accent-color);
 
@@ -59,6 +94,7 @@ button:focus {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  outline: 2px solid green;
 }
 
 .accent {
@@ -66,26 +102,42 @@ button:focus {
 }
 
 /* Site nav */
-.site-nav,
-.contacts-nav {
+.site-nav {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  outline: 2px solid blue;
 }
 
 .site-nav .link {
   color: var(--title-text-color);
 }
 
-.contacts-nav {
+.contact-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid blueviolet;
+}
+.contact {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  /* outline: 2px solid fuchsia; */
   color: var(--primary-text-color);
 }
 
 .site-nav .link:hover,
-.contacts-nav .link:hover,
+.contact .link:hover,
 .site-nav .link:focus,
-.contacts-nav .link:focus {
+.contact .link:focus {
   color: var(--accent-color);
 }
 
@@ -93,9 +145,14 @@ button:focus {
 
 .hero {
   background-color: var(--primary-text-color);
+  text-align: center;
+  height: 600px;
+  outline: 2px solid tomato;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
   color: var(--primary-white-color);
 
   font-weight: 900;
@@ -103,14 +160,24 @@ button:focus {
   line-height: 1.37;
   text-align: center;
   letter-spacing: 0.06em;
+  outline: 2px solid red;
 }
 .btn-hero {
-  background-color: var(--accent-color);
+  /* display: inline-block; */
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px; /*минимальная длинна кнопки */
+
   color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border: 1px solid transparent; /*transparent - прозрачная рамка */
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+
+  text-align: center;
+  /* outline: 2px solid tomato; */
 }
 
 .btn-hero:hover,
@@ -187,6 +254,7 @@ footer {
 .btn-footer {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  padding: 10px 45px;
 }
 
 .btn-footer:hover,
