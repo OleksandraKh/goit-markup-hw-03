@@ -36,6 +36,8 @@ body {
   text-decoration: none;
 }
 h2 {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--title-text-color);
 
   font-style: 700;
@@ -44,6 +46,8 @@ h2 {
   text-align: center;
 }
 h3 {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--title-text-color);
 
   font-style: 700;
@@ -146,7 +150,7 @@ button:focus {
 .hero {
   background-color: var(--primary-text-color);
   text-align: center;
-  height: 600px;
+  /* height: 600px; */
   outline: 2px solid tomato;
 }
 
@@ -188,7 +192,38 @@ button:focus {
 
 /* Features */
 
+.features-container {
+  outline: 2px solid blue;
+  width: 278px;
+  margin-bottom: 92px;
+}
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  /* margin-top: 60px; */
+  text-align: center;
+}
+.feature-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.section-container {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 2px solid blueviolet;
+}
 .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
