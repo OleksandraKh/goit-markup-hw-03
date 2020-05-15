@@ -45,7 +45,7 @@ h2 {
   line-height: 1.17;
   text-align: center;
 }
-h3 {
+/* h3 {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--title-text-color);
@@ -53,7 +53,7 @@ h3 {
   font-style: 700;
   font-size: 14px;
   line-height: 1.14;
-}
+} */
 button {
   background-color: #f5f4fa;
 
@@ -215,47 +215,83 @@ button:focus {
 
 /* Features */
 
-.features-container {
-  outline: 2px solid blue;
-  width: 278px;
-  margin-bottom: 92px;
-}
-.icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  /* margin-top: 60px; */
-  text-align: center;
-}
-.feature-title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
 .section-container {
+  display: flex; /*Создаёт flex-контейнер */
+  flex-wrap: wrap; /*разрешает элементам перепрыгивать на другие строки, которые по умолчанию располагаются сверху вниз (вдоль поперечной оси). */
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
-  outline: 2px solid blueviolet;
+  width: 1230px;
+  /* outline: 2px solid blueviolet; */
 }
+.flex-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* outline: 2px solid tomato; */
+}
+
+.features-container li:first-child {
+  margin-left: 30px;
+}
+.section-item {
+  margin-left: 30px;
+  /* outline: 2px solid tomato; */
+}
+.section-item:first-child {
+  margin-left: 0;
+}
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  /* outline: 2px solid blueviolet; */
+  text-align: center;
+}
+.feature-title {
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: var(--title-text-color);
+  font-style: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  /* outline: 2px solid blueviolet; */
+}
+
 .text {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-
+  /* outline: 2px solid blueviolet; */
   color: var(--primary-text-color);
 }
 
 /* Чем мы занимаемся */
+.divace-title {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.divace {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
 
+  /* outline: 2px solid tomato; */
+}
 .section-subtitle {
   background-color: var(--primary-text-color);
   color: var(--primary-white-color);
@@ -263,16 +299,53 @@ button:focus {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
 }
 
 /* Наша команда */
 
 .section-team {
-  background-color: #f5f4fa;
-}
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* outline: 2px solid tomato; */
+  background-color: var(--primary-white-color);
+}
+.link-icon {
+  display: flex;
+
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  /* outline: 2px solid tomato; */
+}
+.link-title {
+  display: flex;
+
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* outline: 2px solid tomato; */
+}
+.link-title li:first-child {
+  margin-left: 40px;
+}
 .team-subtitle {
-  color: var(--title-text-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  /* color: var(--title-text-color); */
 
   font-weight: 500;
   font-size: 16px;
@@ -280,6 +353,10 @@ button:focus {
 }
 
 .team-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center;
   color: var(--primary-text-color);
 
   font-size: 16px;
@@ -292,6 +369,14 @@ button:focus {
 }
 
 /* Постоянные клиенты */
+.customers {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
 
 /* Подвал */
 footer {
