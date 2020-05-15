@@ -412,6 +412,7 @@ button:focus {
 .customer-container .section-item {
   margin-right: auto;
   margin-left: 165px;
+  margin-bottom: 130px;
   text-align: center;
   /* outline: 2px solid tomato; */
 }
