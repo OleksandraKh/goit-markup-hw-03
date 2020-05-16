@@ -45,15 +45,7 @@ h2 {
   line-height: 1.17;
   text-align: center;
 }
-/* h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: var(--title-text-color);
 
-  font-style: 700;
-  font-size: 14px;
-  line-height: 1.14;
-} */
 button {
   background-color: #f5f4fa;
 
@@ -128,7 +120,6 @@ button:focus {
 }
 
 .site-nav .item {
-  /* background-color: tomato; */
   margin-right: 30px;
 }
 .site-nav .item:last-child {
@@ -141,12 +132,8 @@ button:focus {
 
 .contact-container {
   display: flex;
-  /* align-items: center; */
   margin-left: auto;
 
-  /* margin-right: auto; */
-  /* padding-left: 15px;
-  padding-right: 15px; */
   /* outline: 2px solid blueviolet; */
 }
 .contact li:last-child {
@@ -154,18 +141,15 @@ button:focus {
 }
 .contact {
   display: flex;
-
   justify-content: flex-end;
-  /* margin-left: 30px; */
   margin-top: 0;
   margin-bottom: 0;
 
-  /* font-weight: 500; */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  /* outline: 2px solid fuchsia; */
   color: var(--primary-text-color);
+  /* outline: 2px solid fuchsia; */
 }
 
 .site-nav .link:hover,
@@ -194,19 +178,15 @@ button:focus {
   letter-spacing: 0.06em;
 }
 .btn-hero {
-  /* display: inline-block; */
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px; /*минимальная длинна кнопки */
-
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   border: 1px solid transparent; /*transparent - прозрачная рамка */
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
   text-align: center;
 }
 
@@ -234,30 +214,31 @@ button:focus {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-
   margin-top: 94px;
   margin-bottom: 0;
-
   /* outline: 2px solid tomato; */
 }
 
 .features-container li:first-child {
   margin-left: 30px;
 }
+
 .section-item {
   margin-left: 30px;
   /* outline: 2px solid tomato; */
 }
+
 .section-item:first-child {
   margin-left: 0;
 }
+
 .icon {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-  /* outline: 2px solid blueviolet; */
   text-align: center;
+  /* outline: 2px solid blueviolet; */
 }
 .feature-title {
   margin-bottom: 20px;
@@ -287,12 +268,12 @@ button:focus {
   margin-right: auto;
 }
 .divace {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+
   margin-top: 0;
   margin-bottom: 0;
-
   /* outline: 2px solid tomato; */
 }
 .section-subtitle {
@@ -327,27 +308,23 @@ button:focus {
   margin-top: 0;
   margin-bottom: 0;
 
-  /* outline: 2px solid tomato; */
   background-color: var(--primary-white-color);
+  /* outline: 2px solid tomato; */
 }
 .link-icon {
   display: flex;
-
   margin-right: auto;
-  text-align: center;
   margin-top: 0;
   margin-bottom: 40px;
-
+  text-align: center;
   /* outline: 2px solid tomato; */
 }
 .link-title {
   display: flex;
-
   margin-right: auto;
-  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-
+  text-align: center;
   /* outline: 2px solid tomato; */
 }
 .link-icon li:first-child {
@@ -437,17 +414,21 @@ button:focus {
 
 /* Подвал */
 footer {
-  /* flex-wrap: wrap; */
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  height: 253px;
 
   /* outline: 2px solid blueviolet; */
   background-color: #2f303a;
 }
+.text {
+  outline: 2px solid white;
+}
 
 .footer-container {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
@@ -460,22 +441,24 @@ footer {
 
   outline: 2px solid white;
 }
+
 .flex-add {
+  /* justify-content: flex-start; */
   display: inline;
   /* display: flex; */
   /* flex-wrap: wrap; */
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  margin-right: 180px;
   /* justify-content: flex-start; */
   outline: 2px solid white;
 }
 .footer-logo {
   display: inline;
 
-  margin-top: 46px;
-  margin-bottom: 0;
+  padding-top: 48px;
+  padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
 
@@ -515,6 +498,7 @@ address {
 } */
 
 .flex-bottom {
+  /* justify-content: flex-end; */
   display: inline;
   /* display: flex; */
   /* flex-wrap: wrap; */
@@ -559,8 +543,6 @@ address {
 
 /* Портфолио */
 .portfolio-container {
-  /* margin-top: 0;
-  margin-bottom: 0; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -599,13 +581,8 @@ address {
 
 .card-container {
   width: 1200px;
-  /* margin-top: 0;
-  margin-bottom: 0; */
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 15px;
-  padding-right: 15px; */
-
   /* outline: 2px solid lawngreen; */
 }
 .flex-container {
@@ -619,9 +596,7 @@ address {
 }
 .card {
   margin-right: 30px;
-  /* margin-left: auto; */
   margin-bottom: 30px;
-
   width: 380px;
 
   /* outline: 2px solid tomato; */
@@ -645,15 +620,7 @@ address {
   letter-spacing: 0.06em;
   /* outline: 2px solid tomato; */
 }
-/* .card-text {
-  margin-top: 0;
-  margin-bottom: 0;
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
 
-  font-size: 18px;
-  line-height: 1.56;
-} */
 .card-subtitle {
   margin-top: 0;
   margin-bottom: 20px;
