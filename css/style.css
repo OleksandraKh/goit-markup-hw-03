@@ -33,7 +33,11 @@ body {
   margin: 0;
 }
 .link {
+  margin-top: 0;
+  margin-bottom: 0;
   text-decoration: none;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 h2 {
   margin-top: 0;
@@ -315,7 +319,7 @@ button:focus {
   display: flex;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 0;
   text-align: center;
   /* outline: 2px solid tomato; */
 }
@@ -355,9 +359,16 @@ button:focus {
   line-height: 1.19px;
 }
 
-.img:focus,
-.img:hover {
+.team-img:focus,
+.team-img:hover {
   background-color: var(--accent-color);
+}
+.team-link {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 /* Постоянные клиенты */
@@ -418,47 +429,34 @@ footer {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  height: 253px;
 
-  /* outline: 2px solid blueviolet; */
   background-color: #2f303a;
-}
-.text {
-  outline: 2px solid white;
 }
 
 .footer-container {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 15px;
   padding-right: 15px;
   width: 1230px;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
-
-  outline: 2px solid white;
+  /* outline: 2px solid white; */
 }
 
 .flex-add {
-  /* justify-content: flex-start; */
-  display: inline;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  margin-top: 0;
-  margin-bottom: 0;
-  /* margin-left: auto; */
-  margin-right: 180px;
-  /* justify-content: flex-start; */
-  outline: 2px solid white;
+  margin-top: 48px;
+  margin-bottom: 46px;
+  align-items: center;
+  /* outline: 2px solid white; */
 }
+
 .footer-logo {
   display: inline;
 
-  padding-top: 48px;
-  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 
@@ -470,7 +468,7 @@ footer {
   line-height: 1.19;
 }
 address {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
@@ -489,22 +487,27 @@ address {
 
 .flex-connect {
   display: inline;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  outline: 2px solid white;
+  margin-right: 102px;
+  margin-left: 180px;
+  margin-top: 46px;
+  margin-bottom: 116px;
+  /* outline: 2px solid white; */
 }
-/* .accent {
+.accent {
   color: var(--title-text-color);
-} */
+}
 
 .flex-bottom {
-  /* justify-content: flex-end; */
   display: inline;
+  margin-top: 46px;
+  margin-bottom: 78px;
   /* display: flex; */
-  /* flex-wrap: wrap; */
-  outline: 2px solid white;
+
+  /* outline: 2px solid white;d */
 }
 .footer-text {
+  display: flex;
+
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
@@ -515,15 +518,91 @@ address {
   font-size: 14px;
   line-height: 1.14;
 }
+.social {
+  display: flex;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* text-align: center; */
+}
+
+.socials {
+  display: flex;
+  margin-right: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.socials li:last-child {
+  margin-right: 0;
+}
+.socials-img:focus,
+.socials-img:hover {
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
+  background-color: var(--accent-color);
+}
+.socials-link {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.fle-text {
+  /* display: flex; */
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-link {
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
 
 .logo-accent {
   color: var(--primary-white-color);
 }
 
+.mail-icon {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-right: auto;
+  margin-top: 21px;
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+.mail-btn {
+  /* display: flex; */
+  margin-right: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 270px;
+  height: 50px;
+
+  color: var(--primary-text-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 .btn-footer {
-  background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
   color: var(--primary-white-color);
-  padding: 10px 45px;
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
 }
 
 .btn-footer:hover,
