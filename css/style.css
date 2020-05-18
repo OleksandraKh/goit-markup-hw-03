@@ -17,7 +17,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit; /*наследует значение блочной модели родителя. */
+  box-sizing: inherit;
 }
 
 body {
@@ -27,11 +27,13 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .link {
   display: inline-block;
   margin-top: 0;
@@ -39,16 +41,6 @@ body {
   text-decoration: none;
   padding-bottom: 25px;
   padding-top: 32px;
-}
-h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: var(--title-text-color);
-
-  font-style: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
 }
 
 button {
@@ -78,7 +70,7 @@ button:focus {
 }
 
 .section{
-  padding-top: 0;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 /* Heder */
@@ -92,6 +84,7 @@ button:focus {
   padding-right: 15px;
   width: 1230px;
 }
+
 
 .header-container {
   display: flex;
@@ -211,18 +204,18 @@ button:focus {
 
 /* Features */
 
-.section-container {
-  display: flex; /*Создаёт flex-контейнер */
-  flex-wrap: wrap; /*разрешает элементам перепрыгивать на другие строки, которые по умолчанию располагаются сверху вниз (вдоль поперечной оси). */
+.section-container, .team-container {
+   display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
-  margin-right: auto;
+   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1230px;
   /* outline: 2px solid blueviolet; */
-}
+} 
 .flox-container {
   display: flex;
   margin-left: auto;
@@ -235,14 +228,7 @@ button:focus {
   margin-left: 30px;
 }
 
-.section-item {
-  margin-left: 30px;
-  /* outline: 2px solid tomato; */
-}
 
-.section-item:first-child {
-  margin-left: 0;
-}
 
 .icon {
   display: block;
@@ -274,14 +260,19 @@ v
 
 /* Чем мы занимаемся */
 .section-title {
+  flex-wrap: wrap;
+   
+  color: var(--title-text-color);
+
+  font-style: 700;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
-    
-  padding-top: 94px;
+  padding-top: 0;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  
 }
+
+
 .divace {
   display: flex;
   margin-left: auto;
@@ -310,30 +301,32 @@ v
 }
 
 /* Наша команда */
-.team-container {
-  display: flex; /*Создаёт flex-контейнер */
-  flex-wrap: wrap; /*разрешает элементам перепрыгивать на другие строки, которые по умолчанию располагаются сверху вниз (вдоль поперечной оси). */
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1230px;
 
-  /* outline: 2px solid blueviolet; */
-}
-.section-team {
+ .team {
+    background-color: #F5F4FA;
+ }
+
+
+
+.ourteam {
   display: flex;
   
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-  background-color: var(--primary-white-color);
+  /* background-color: var(--primary-white-color); */
   /* outline: 2px solid tomato; */
 }
+
+
+.section-item {
+  
+  flex-wrap: wrap;
+  margin-left: 20px;
+  outline: 2px solid tomato;
+}
+
+.section-item li:first-child {
+  margin-left: 0;
+}
+
 .link-icon {
   display: flex;
   margin-right: auto;
