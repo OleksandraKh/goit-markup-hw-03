@@ -353,7 +353,7 @@ v
   /* outline: 2px solid tomato; */
 }
 
-.divace-item li:first-child {
+.divace-item:first-child {
   margin-left: 0;
 }
 
@@ -364,7 +364,7 @@ v
   /* outline: 2px solid tomato; */
 }
 
-.section-item li:first-child {
+.section-item:first-child {
   margin-left: 0;
 }
 
@@ -373,7 +373,7 @@ v
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  /* justify-content: center; */
+  justify-content: center;
   margin-left: auto;
   /* outline: 2px solid tomato; */
 }
@@ -386,7 +386,7 @@ v
   margin-left: 40px;
   /* outline: 2px solid tomato; */
 }
-.link-title li:first-child {
+.link-title:first-child {
   margin-left: 0;
 }
 .team-subtitle {
@@ -586,7 +586,7 @@ address {
   text-align: center;
 }
 
-.socials li:last-child {
+.socials:last-child {
   margin-right: 0;
 }
 .socials-img:focus,
