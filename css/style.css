@@ -42,7 +42,7 @@ body {
 }
 
 .link {
-  display: inline-block;
+  display: block;
   margin-top: 0;
   margin-bottom: 0;
   text-decoration: none;
@@ -407,7 +407,7 @@ v
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   text-align: center;
   color: var(--primary-text-color);
 
@@ -499,18 +499,24 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+  
   /* outline: 2px solid white; */
 }
 
 .flex-add {
-  margin-top: 48px;
-  margin-bottom: 46px;
+  display:inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* margin-left: ; */
   align-items: center;
+  /* padding-top: 56px; */
   /* outline: 2px solid white; */
 }
 
 .footer-logo {
-  display: inline;
+  display: block;
+  margin-top: 0;
+  margin-bottom:0;
 
   color: var(--accent-color);
 
@@ -519,8 +525,17 @@ footer {
   font-size: 26px;
   line-height: 1.19;
 }
+.flex-add .link{
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  padding-bottom: 10px;
+  /* padding-top: 32px; */
+}
+
 address {
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
@@ -536,13 +551,24 @@ address {
 
   font-style: normal;
 }
+.add-link{
+  display: flex;
+  display: block;
+  
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
 
+  color: rgba(255, 255, 255, 0.6);
+}
 .flex-connect {
   display: inline;
   margin-right: 102px;
   margin-left: 180px;
-  margin-top: 46px;
-  margin-bottom: 116px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 56px;
+  /* padding-bottom: 50px; */
   /* outline: 2px solid white; */
 }
 .accent {
@@ -551,8 +577,10 @@ address {
 
 .flex-bottom {
   display: inline;
-  margin-top: 46px;
-  margin-bottom: 78px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 56px;
+  padding-bottom: 50px;
   /* display: flex; */
 
   /* outline: 2px solid white;d */
@@ -673,6 +701,16 @@ address {
   line-height: 2;
   text-align: center;
   letter-spacing: 0.03em;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flex-bottom > h2{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.flex-connect > h2{
+margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Портфолио */
